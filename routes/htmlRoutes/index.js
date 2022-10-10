@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 // Connects to the notes page
 router.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/index.html'))
+  res.sendFile(path.join(__dirname, '../../public/notes.html'))
 })
 
 // Sends 404 error if request does not exist
