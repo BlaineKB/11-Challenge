@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const fs = require('fs')
 
-// reads and parses JSON file
+// Reads JSON file from notes endpoint
 router.get('/notes', (req, res) => {
   fs.readFile('./db/db.json', (error, data) => {
     if (error) {
